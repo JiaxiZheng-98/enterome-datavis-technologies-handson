@@ -3,8 +3,14 @@
 </script>
 
 <div>
-	<button class="btn btn-primary" on:click={() => (clicked = true)}>
-		click here
-	</button>
-	<!--  -->
+	{#if !clicked}
+		<button class="btn btn-primary" on:click={() => (clicked = true)}>
+			You have to click the button!
+		</button>
+	{/if}
+	{#if clicked}
+		<button class="btn btn-primary" on:click={() => (clicked = true)}>
+			You have clicked the button!
+		</button>
+	{/if}
 </div>

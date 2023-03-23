@@ -7,6 +7,10 @@
 </script>
 
 <div>
-	<h5>Famous soccer players:</h5>
-	<!--  -->
+	<h5>Famous soccer playerws:</h5>
+	{#each videos as v}
+		<p>
+			{v.name} ({v.url})
+		</p>
+	{/each}
 </div>
